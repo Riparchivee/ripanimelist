@@ -1,5 +1,5 @@
 "use client"
-import { ArrowSquareLeft } from "@phosphor-icons/react"
+import BackButton from "@/components/Utilities/BackButton"
 import { useRouter } from "next/navigation"
 
 const Header = ({ title }) => {
@@ -12,9 +12,7 @@ const Header = ({ title }) => {
 
     return (
         <div className="flex justify-between items-center mb-4">
-            <button className="text-color-primary" onClick={handleBack}>
-                <ArrowSquareLeft size={32} />
-            </button>
+            <BackButton />
             <h3 className="text-2xl text-color-primary font-bold">
                 {title}
             </h3>

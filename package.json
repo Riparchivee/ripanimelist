@@ -1,5 +1,5 @@
 {
-  "name": "cuyanimelist",
+  "name": "ARIPNime",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,11 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@phosphor-icons/react": "^2.0.13",
+    "@phosphor-icons/react": "^2.1.7",
     "@prisma/client": "^5.6.0",
     "eslint-config-next": "^14.0.3",
-    "next": "^14.0.3",
-    "next-auth": "^4.24.4",
+    "next": "^15.0.1",
+    "next-auth": "^4.24.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-youtube": "^10.1.0"

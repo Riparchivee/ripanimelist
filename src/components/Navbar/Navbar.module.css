@@ -1,0 +1,22 @@
+.itemsNav .item{
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid #ff6500 ;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: #eeeeee;
+}
+
+.itemsNav .item:hover{
+    color: #eeeeee;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #ff6500;
+    box-shadow: 0  0 25px #ff6500;
+}
