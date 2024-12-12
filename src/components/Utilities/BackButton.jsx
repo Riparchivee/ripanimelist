@@ -8,7 +8,7 @@ const BackButton = () => {
      <div className="px-4 py-4">
      <button onClick={() => router.back()}>
       <ArrowLeft size={32} 
-      className="text-color-primary hover:text-color-accent"
+      className="text-color-primary hover:text-color-accent fixed"
       />
      </button>
      </div>

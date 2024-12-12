@@ -17,6 +17,7 @@ img {
   -ms-transition: 0.3s ease all;
   -o-transition: 0.3s ease all;
   aspect-ratio: 4/6;
+  z-index: -1;
 }
 
 img:hover {
@@ -26,7 +27,7 @@ img:hover {
 .loading {
   width:50px;
   height:50px;
-  --c:radial-gradient(farthest-side,#ff6500 92%,#0000);
+  --c:radial-gradient(farthest-side,#4335A7 92%,#0000);
   background: 
     var(--c) 50% 0,
     var(--c) 50% 100%,

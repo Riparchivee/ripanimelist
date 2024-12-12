@@ -8,7 +8,7 @@ const RecommendedList = ({ api }) => {
         {api.data?.map((anime) => (
           <Link
             href={`/anime/${anime.mal_id}`}
-            className="cursor-pointer shadow-xl text-color-primary hover:text-color-accent transition-all min-w-[200px]"
+            className="cursor-pointer shadow-xl text-color-primary hover:text-color-utama transition-all min-w-[200px]"
             key={anime.mal_id}
           >
             <Image

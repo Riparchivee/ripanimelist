@@ -16,7 +16,7 @@ const Page = async ({ params }) => {
         <>
             <section>
                 <div className="flex md:flex-row flex-col justify-between md:items-center p-4 gap-2 bg-color-accent">
-                    <Link href="/" className="font-bold text-2xl">
+                    <Link href="/" className="font-bold text-2x">
                         ARIPNime
                     </Link>
                     <InputSearch />

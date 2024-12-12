@@ -26,19 +26,19 @@ const Page = async ({ params }) => {
     return (
         <>
             <BackButton />
-            <div className="mt-3 pt-4 px-4 flex justify-center items-center flex-col gap-3">
+            <div className="mt-1 pt-4 px-4 flex justify-center items-center flex-col gap-3">
                 <h3 className="text-3xl text-color-primary hover:text-color-accent font-bold">
                     {anime.data?.title} - {anime.data?.year}
                 </h3>
-                <h2 className="font-bold text-2xl text-color-primary">
+                <h2 className="font-bold text-2xl text-color-utama">
                     {anime.data?.title_japanese}
                 </h2>
             </div>
             <div className="flex justify-center flex-wrap gap-4 p-4">
                 {anime.data?.genres.map((genre, index) => (
                     <span
-                        key={`${genre.name} - ${index}`}
-                        className="text-color-primary font-bold  p-3 border-2 border-color-accent rounded-xl hover:bg-color-accent hover:text-color-dark transition-all"
+                        key={index}
+                        className="text-color-primary font-bold  p-3 border-2 border-color-accent rounded-xl hover:bg-color-accent hover:text-color-utama transition-all"
                     >
                         {genre.name}
                     </span>
@@ -46,9 +46,9 @@ const Page = async ({ params }) => {
             </div>
 
             <div className="px-4 pb-5 flex gap-2 text-color-primary overflow-x-auto md:justify-center">
-                <div className="w-auto flex flex-col justify-center items-center rounded border border-color-primary p-2">
-                    <h3>Peringkat</h3>
-                    <p className="text-center">{anime.data?.rank}</p>
+                <div className="w-auto flex flex-col justify-center items-center rounded border border-color-utama p-2">
+                    <h3 className="text-color-utama">Peringkat</h3>
+                    <p className="text-center ">{anime.data?.rank}</p>
                 </div>
                 <div className="w-auto flex flex-col justify-center items-center rounded border border-color-primary p-2">
                     <h3>Rating</h3>
@@ -94,7 +94,7 @@ const Page = async ({ params }) => {
             <div className="w-auto p-4 flex flex-col gap-3 text-color-primary">
             {videoInfo?.data?.episodes.map((episodes, index) => (
                 <div 
-                key={`${episodes.mal_id}`}
+                key={episodes.mal_id + index}
                 className="flex justify-between items-center px-3 border border-color-accent p-4 gap-2 rounded rounded-2xl">
                     <h3 className="font-bold">{episodes?.episode}</h3>
                     <h3 className="font-bold">{episodes.title}</h3>

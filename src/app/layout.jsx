@@ -1,4 +1,3 @@
-import Navbar from '@/components/Navbar'
 import NavbarBot from '@/components/Navbar/NavbarBot'
 import '@/app/globals.css'
 import FixNavbarBot from "@/components/Navbar/FixNavbarBot"

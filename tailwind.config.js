@@ -16,9 +16,12 @@ module.exports = {
     colors: {
       color: {
         primary: '#eeeeee',
-        accent: '#ff6500',
-        secondary: '#0b192c',
-        dark: '#222831'
+        accent: '#054A91',
+        secondary: '#F8EDED',
+        dark: '#0F1020',
+        utama: '#FF2C55',
+        Utwo: '#E2294F',
+        kng: '#FFE700'
       }
     }
   },
